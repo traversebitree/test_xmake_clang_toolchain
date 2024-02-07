@@ -1,5 +1,4 @@
 add_rules("mode.debug", "mode.release")
--- add_requires("llvm")
 add_toolchains("@clang")
 
 target("dynamic_mylib")
