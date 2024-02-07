@@ -49,3 +49,7 @@ jobs:
         run: |
           xmake q -y
           xmake -vD
+
+      - name: Inspect .def
+        working-directory: ${{ github.workspace }}
+        run: ls "build\.gens\dynamic_mylib\windows\x64\release\rules\symbols\"
