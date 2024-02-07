@@ -47,4 +47,5 @@ jobs:
       - name: Test build
         working-directory: ${{ github.workspace }}
         run: |
+          xmake q -y
           xmake -vD
