@@ -52,4 +52,5 @@ jobs:
 
       - name: Inspect .def
         working-directory: ${{ github.workspace }}
+        if: success() || failure()
         run: ls "build\.gens\dynamic_mylib\windows\x64\release\rules\symbols\"
