@@ -1,6 +1,6 @@
 add_rules("mode.debug", "mode.release")
-add_requires("llvm")
-add_toolchains("@llvm")
+-- add_requires("llvm")
+add_toolchains("@clang")
 
 target("static_mylib")
 set_kind("static")
