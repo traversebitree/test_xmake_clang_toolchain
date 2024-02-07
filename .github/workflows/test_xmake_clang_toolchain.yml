@@ -42,7 +42,6 @@ jobs:
           xmake-version: ${{ matrix.version }}
       - name: Run setup xmake and test
         run: |
-          xmake update -s dev
           xmake --version
 
       - name: Test build
